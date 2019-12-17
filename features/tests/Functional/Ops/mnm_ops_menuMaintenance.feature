@@ -1,0 +1,14 @@
+Feature: Maintenance
+
+  Scenario: Maintenance Item Validation
+    Given User launch the application
+    When  User enter valid user name and password
+    And  User click on login button
+    Then User should able to see Overview screen
+    And User click on the Operations link(tab)
+    When User click on Menu item & verify breadcrum
+      | menu_item          | breadcrumb    |
+      | Maintenance   > Show Schedule     | Show Schedule         |
+      | Maintenance   > Schedule New     | Schedule New         |
+      | Maintenance   > Edit Schedule     | Edit Schedule         |
+      | Maintenance   > History     | History         |
